@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Script Repository</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>NytroxScripts</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Scripts</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Scripts Section -->
+    <section class="scripts">
+        <div class="script">
+            <h3>The Classic Soccer Script</h3>
+            <pre id="script1">loadstring(game:HttpGet('https://raw.githubusercontent.com/wrestonbest/Helixia-Hub/master/The%20Classic%20Soccer/main.lua'))()</pre>
+            <button onclick="copyCode('script1')">Copy</button>
+        </div>
+        <div class="script">
+            <h3>Arsenal Script</h3>
+            <pre id="script2">loadstring(game:HttpGet('https://raw.githubusercontent.com/wrestonbest/Helixia-Hub/master/Arsenal/main.lua'))()</pre>
+            <button onclick="copyCode('script2')">Copy</button>
+        </div>
+        <div class="script">
+            <h3>Mps 4-a Side Script</h3>
+            <pre id="script3">loadstring(game:HttpGet('https://raw.githubusercontent.com/wrestonbest/Helixia-Hub/master/Mps%204-a%20Side/main.lua'))()</pre>
+            <button onclick="copyCode('script3')">Copy</button>
+        </div>
+        <div class="script">
+            <h3>Real Futbol 24 Script</h3>
+            <pre id="script4">loadstring(game:HttpGet('https://raw.githubusercontent.com/wrestonbest/Helixia-Hub/master/Real%20Futbol%2024/main.lua'))()</pre>
+            <button onclick="copyCode('script4')">Copy</button>
+        </div>
+        <div class="script">
+            <h3>Tps Street Soccer Script</h3>
+            <pre id="script5">loadstring(game:HttpGet('https://raw.githubusercontent.com/wrestonbest/Helixia-Hub/master/Tps%20Street%20Soccer/main.lua'))()</pre>
+            <button onclick="copyCode('script5')">Copy</button>
+        </div>
+        <div class="script">
+            <h3>DTI Script</h3>
+            <pre id="script6">loadstring(game:HttpGet('https://raw.githubusercontent.com/hellohellohell012321/DTI-GUI-V2/main/dti_gui_v2.lua',true))()</pre>
+            <button onclick="copyCode('script6')">Copy</button>
+        </div>
+        <div class="script">
+            <h3>Realistic Car Driving</h3>
+            <pre id="script7">loadstring(game:HttpGet('https://api.luarmor.net/files/v3/loaders/3f4c258405c294983a9b0e113dad3de7.lua'))()</pre>
+            <button onclick="copyCode('script7')">Copy</button>
+        </div>
+        <div class="script">
+            <h3>Prison Life</h3>
+            <pre id="script8">loadstring(game:HttpGet('https://raw.githubusercontent.com/tbao143/thaibao/main/TbaohubPrisonLife'))()</pre>
+            <button onclick="copyCode('script8')">Copy</button>
+        </div>
+        <div class="script">
+            <h3>Ultimate Troll Hub</h3>
+            <pre id="script9">loadstring(game:HttpGet('https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau'))()</pre>
+            <button onclick="copyCode('script9')">Copy</button>
+        </div>
+        <div class="script">
+            <h3>Backdoor</h3>
+            <pre id="script10">loadstring(game:HttpGet('https://raw.githubusercontent.com/Its-LALOL/LALOL-Hub/main/Backdoor-Scanner/script'))()</pre>
+            <button onclick="copyCode('script10')">Copy</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 NytroxScripts. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function copyCode(id) {
+            const code = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(code).then(() => {
+                alert('Code copied to clipboard!');
+            });
+        }
+    </script>
+</body>
+</html>
